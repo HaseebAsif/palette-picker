@@ -1,0 +1,133 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+body {
+  background-color: rgb(20, 28, 39);
+  color: azure;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #181818;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 24rem;
+  background-color: rgb(37, 37, 37);
+  border-radius: 10px;
+}
+.hex-code {
+  display: block;
+  font-size: 12px;
+  text-align: center;
+  margin-top: 4px;
+  color: #333; /* You can choose the color that suits your design */
+}
+.color-input {
+  display: flex;
+}
+input {
+  margin-left: 1rem;
+}
+#paletteTitle {
+  padding: 0.3rem;
+}
+button {
+  padding: 0.5rem 0.8rem;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+.color-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+  padding: 1rem;
+}
+h3 {
+  text-align: center;
+  margin: 1rem 0;
+}
+.delete-palette-button {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.temperature-info {
+  text-align: center;
+  margin: 3rem 0 1rem;
+  padding: 0.5rem;
+}
+
+/* CSS style for the hex code */
+.hex-code {
+  font-size: 12px;
+  text-align: center;
+  margin-right: 8px;
+  color: white; /* You can choose the color that suits your design */
+}
+
+/* Other CSS styles for the color swatch */
+.colors-list li {
+  /* Your existing styles for the color swatch */
+}
+.Palette-heading {
+  margin: 2rem;
+  font-size: 2.5rem;
+}
+li::marker {
+  display: none;
+  list-style-type: none;
+}
+#palettes-section {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+}
+.palette {
+  background-color: rgb(81, 81, 81);
+  padding: 2rem 3rem;
+}
+fieldset {
+  padding: 1rem;
+}
+@media screen and (max-width: 960px) {
+  #palettes-section {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #palettes-section {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 3rem;
+  }
+}
